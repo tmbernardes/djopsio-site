@@ -27,22 +27,30 @@
 <p>When you connect a channel, you sign in with Google and grant DJOPS permission to act on that channel. DJOPS uses that permission only to do what you ask it to in the app:</p>
 <ul>
   <li>upload videos you have created and approved (full sets and short clips);</li>
-  <li>set a video's title, description, chapters, tags, category, privacy status and scheduled publish time;</li>
+  <li>set and update a video's title, description, chapters, tags, category, privacy status and scheduled publish time;</li>
   <li>set a custom thumbnail;</li>
-  <li>read your channel's basic information and playlists, so you can pick where to publish, and add a video to a playlist.</li>
+  <li>read your channel's details, videos and playlists, so you can see your uploads and pick where to publish;</li>
+  <li>create and update playlists, and add your videos to them;</li>
+  <li>update your channel's details when you edit them in DJOPS;</li>
+  <li>delete a video, only when you choose to remove it in DJOPS;</li>
+  <li>read your channel's analytics (YouTube Analytics, read-only), so DJOPS can show which sets and clips performed well.</li>
 </ul>
-<p>DJOPS does not read, collect or analyze data about other channels, other creators or your viewers.</p>
+<p>DJOPS also reads the name and email address of the Google account you sign in with, so you can tell your connected accounts apart.</p>
+<p>DJOPS does not collect data about other channels or other creators. Channel analytics are aggregated statistics provided by YouTube; DJOPS never identifies individual viewers.</p>
+<p>DJOPS's use of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
 
 <h2>2. What data DJOPS accesses and where it is stored</h2>
 <ul>
   <li><strong>Google sign-in tokens.</strong> The access and refresh tokens Google issues when you connect a channel are stored only on your Mac. They are used only to make the YouTube requests described above.</li>
-  <li><strong>Channel information.</strong> Your channel's name, ID and playlists are stored locally so the app can show you where a video will go.</li>
+  <li><strong>Channel information and analytics.</strong> Your channel's name, ID, videos, playlists and analytics are stored locally so the app can show you where a video will go and how your content is doing.</li>
+  <li><strong>Backups, if you turn them on.</strong> DJOPS can back up its own data to your Google Drive. It only writes to your Drive when you enable backups, and only the files it creates for them.</li>
   <li><strong>Your media and library.</strong> Recordings, audio files, your Rekordbox library and anything DJOPS produces from them (edits, thumbnails, clips, listings) stay on your Mac. They leave your computer only when you publish, and only to the platform you publish to.</li>
 </ul>
 <p>We don't operate a server that receives or stores YouTube API data or your media.</p>
 
 <h2>3. How we use and share data</h2>
 <p>Data is used only to provide DJOPS's features to you. We do not sell your data, share it with third parties, use it for advertising, or use it to train AI models.</p>
+<p>If you connect other services, such as Spotify for playlists or Publer for scheduling posts to Instagram and TikTok, DJOPS sends them only what is needed for the action you choose (for example, a clip and its caption to Publer). Those services handle that data under their own terms. YouTube API data is never sent to them.</p>
 <p>If you choose to connect your own AI provider (for example to help write a video description), the text you send for that task, such as a tracklist or a draft description, goes directly from your Mac to that provider under their terms. Google sign-in tokens are never sent to an AI provider.</p>
 
 <h2>4. Beta sign-ups, cookies and analytics</h2>
