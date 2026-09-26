@@ -3,137 +3,298 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>DJOPS: from the gig to a published channel</title>
-<meta name="description" content="DJOPS is a macOS app for DJs. Record your set, and it cuts the video, writes the listing with tracklist and chapters, makes the clips and publishes to your own YouTube channel. Runs on your Mac.">
+<title>DJOPS: Rekordbox library, set planning, DJ set videos and clips for Mac</title>
+<meta name="description" content="DJOPS keeps your Rekordbox library in shape, plans your next set, and turns every gig into a finished video plus a week of clips for Instagram, TikTok, YouTube and SoundCloud. Mac app for DJs, in private beta.">
 <link rel="canonical" href="https://djopsio.com/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="DJOPS">
 <meta property="og:url" content="https://djopsio.com/">
-<meta property="og:title" content="DJOPS: play the gig, wake up to the video">
-<meta property="og:description" content="A macOS app for DJs: the cut, the clips, the tracklist and the schedule, from your recording to your channel. Private beta.">
+<meta property="og:title" content="You bring the music. DJOPS handles everything else.">
+<meta property="og:description" content="Rekordbox library tools, set planning, and a finished video plus a week of clips from every gig. Mac app for DJs, in private beta.">
 <meta property="og:image" content="https://djopsio.com/og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://djopsio.com/og.png">
-<meta name="theme-color" content="#0b0d10">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<meta name="theme-color" content="#232323">
+<link rel="icon" href="assets/favicon.ico" sizes="32x32">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon-180.png">
+<link rel="preload" href="assets/fonts/anton-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/ibm-plex-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="style.css">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230b0d10'/%3E%3Ccircle cx='16' cy='16' r='9' fill='none' stroke='%23f5a524' stroke-width='3'/%3E%3Ccircle cx='16' cy='16' r='2.5' fill='%23f5a524'/%3E%3C/svg%3E">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"DJOPS","operatingSystem":"macOS","applicationCategory":"MultimediaApplication","url":"https://djopsio.com/","description":"Mac app for DJs: turns a recorded DJ set into a finished video, clips and a posting schedule, with Rekordbox library tools."}</script>
 </head>
 <body>
-<div class="wrap">
-
-<header class="top">
-  <a class="brand" href="./"><span class="wordmark">DJOPS</span><span class="handle">@djops.io</span></a>
-  <nav aria-label="Main">
-    <a href="#how">How it works</a>
-    <a href="#youtube">YouTube</a>
-    <a href="https://tally.so/r/rj7RAX">Join the beta</a>
-  </nav>
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="./" aria-label="DJOPS home"><svg viewBox="0 0 1024 1024" aria-hidden="true"><rect width="1024" height="1024" rx="229.9" fill="#1C1C1C"/><rect x="89.5" y="252.3" width="131.7" height="519.4" rx="65.9" fill="#A6A6A6"/><rect x="292" y="89.5" width="131.7" height="845.1" rx="65.9" fill="#A6A6A6"/><rect x="494.6" y="187" width="131.7" height="650" rx="65.9" fill="#9EFF00"/><path d="M697.1 314.3 L934.4 512 L697.1 709.7 Z" fill="#9EFF00"/></svg>DJOPS</a>
+    <nav aria-label="Main">
+      <a class="lnk" href="#library">Library</a>
+      <a class="lnk" href="#plan">Plan</a>
+      <a class="lnk" href="#produce">Produce</a>
+      <a class="lnk" href="#grow">Grow</a>
+      <a class="lnk" href="#faq">FAQ</a>
+      <a class="btn btn-primary" href="https://tally.so/r/rj7RAX">Join the beta</a>
+    </nav>
+  </div>
 </header>
 
 <main>
-<div class="hero">
-  <div>
-    <h1>Play the gig.<br>Wake up to the video, the clips and the schedule.</h1>
-    <p class="lede">DJOPS is a macOS app that takes a DJ from the Rekordbox library to a published channel: the cut, the clips, the captions, the calendar. It runs on the laptop you already own. Nothing rented, nothing uploaded anywhere you didn't choose.</p>
-    <div class="ctas">
-      <a class="btn btn-primary" href="https://tally.so/r/rj7RAX">Join the beta</a>
-      <a class="btn btn-ghost" href="#how">See how a set flows</a>
+<div class="wrap">
+  <div class="hero">
+    <div>
+      <span class="chip"><span class="dot" aria-hidden="true"></span>Private beta · macOS</span>
+      <h1 class="display"><span>You bring the music.</span><span>DJOPS handles everything else.</span></h1>
+      <p class="lede">DJOPS keeps your Rekordbox library in shape, plans your next set, and turns every gig into a finished video plus a week of clips for Instagram, TikTok, YouTube and SoundCloud. All on your Mac.</p>
+      <div class="ctas">
+        <a class="btn btn-primary" href="https://tally.so/r/rj7RAX">Join the beta</a>
+        <a class="btn btn-secondary" href="#library">See what it does</a>
+      </div>
+      <ul class="trust">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L19 7"/></svg>Free during the beta</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L19 7"/></svg>Nothing posts without your OK</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L19 7"/></svg>Your music stays on your Mac</li>
+      </ul>
     </div>
+
+    <figure class="setcard" aria-label="Illustration: one recorded set turned into a video, clips and a schedule">
+      <div class="top"><span><b>Saturday, warehouse set</b> · <span class="mono">2:14:08</span></span><span class="mono cams">2 cams + 360</span></div>
+      <div class="wave" aria-hidden="true">
+        <i style="--h:19"></i><i style="--h:16"></i><i style="--h:27"></i><i style="--h:18"></i><i style="--h:29"></i><i style="--h:28"></i><i style="--h:26"></i><i style="--h:37"></i><i style="--h:32"></i><i style="--h:42"></i><i style="--h:39"></i><i style="--h:43"></i><i style="--h:53"></i><i style="--h:63"></i><i style="--h:54"></i><i style="--h:59"></i><i style="--h:69"></i><i style="--h:78"></i><i style="--h:74"></i><i style="--h:73"></i><i style="--h:85"></i><i style="--h:70"></i><i style="--h:86"></i><i style="--h:91" class="hot"></i><i style="--h:89" class="hot"></i><i style="--h:89" class="hot"></i><i style="--h:79"></i><i style="--h:87"></i><i style="--h:75"></i><i style="--h:81"></i><i style="--h:81"></i><i style="--h:74"></i><i style="--h:75"></i><i style="--h:64"></i><i style="--h:62"></i><i style="--h:61"></i><i style="--h:67"></i><i style="--h:59"></i><i style="--h:54"></i><i style="--h:55"></i><i style="--h:49"></i><i style="--h:43"></i><i style="--h:49"></i><i style="--h:61" class="hot"></i><i style="--h:50" class="hot"></i><i style="--h:53" class="hot"></i><i style="--h:49" class="hot"></i><i style="--h:35"></i><i style="--h:30"></i><i style="--h:20"></i><i style="--h:31"></i><i style="--h:15"></i><i style="--h:21"></i><i style="--h:27"></i><i style="--h:16"></i><i style="--h:22"></i>
+        <span class="pin p-build" style="left:24%">build 0:32</span>
+        <span class="pin" style="left:43.5%">drop 0:58</span>
+        <span class="pin" style="left:81%">peak 1:48</span>
+      </div>
+      <div class="outs" aria-hidden="true">
+        <div class="out"><div class="frame w"><div class="crowd"></div><span class="tag">16:9</span><span class="play"></span></div><div class="cap"><b>Full set</b>chapters + tracklist</div></div>
+        <div class="out"><div class="frame t"><div class="crowd"></div><span class="tag">9:16</span></div><div class="cap"><b>Clip 1</b><span class="mono">0:27</span></div></div>
+        <div class="out"><div class="frame t b"><div class="crowd"></div><span class="tag">9:16</span></div><div class="cap"><b>Clip 2</b><span class="mono">0:19</span></div></div>
+        <div class="out"><div class="frame t c"><div class="crowd"></div><span class="tag">9:16</span></div><div class="cap"><b>Clip 3</b><span class="mono">0:31</span></div></div>
+      </div>
+      <div class="sched" aria-hidden="true">
+        <div><span class="when mono">Fri 18:00</span><span class="what">YouTube · full set</span><span class="ok">Scheduled</span></div>
+        <div><span class="when mono">Sat 12:00</span><span class="what">Instagram · clip 1</span><span class="ok">Scheduled</span></div>
+        <div><span class="when mono">Sun 12:00</span><span class="what">TikTok · clip 2</span><span class="ok">Scheduled</span></div>
+      </div>
+      <figcaption>Illustration of what one recorded set turns into.</figcaption>
+    </figure>
   </div>
-  <aside class="madefor" aria-label="Made for">
-    <div class="k">MADE FOR</div>
-    <ul>
-      <li>DJs who film their sets</li>
-      <li>DJs who want a channel without a second job</li>
-      <li>Managers with more than one artist</li>
-      <li>VJs and light ops who want the music to drive the room</li>
-    </ul>
-  </aside>
 </div>
 
-<section aria-labelledby="pains">
-  <div class="sh"><h2 id="pains">Three pains, one workflow</h2><span class="sub">each solved by the same set going through</span></div>
-  <div class="grid g3">
-    <div class="card"><h3>The night after the gig</h3><p>Three cameras, a 360 sphere, an audio file, and a week of editing.</p><p class="fix">Drop the recordings in. The cut follows the music: drops, breakdowns, the moments. The 360 reframes itself.</p></div>
-    <div class="card"><h3>The content treadmill</h3><p>Clips, captions, hooks, several accounts, a calendar you keep forgetting.</p><p class="fix">The clips come out of the set already cut two ways, captioned, and scheduled across your accounts.</p></div>
-    <div class="card"><h3>A library you don't trust</h3><p>Untagged tracks, missing cues, lossy files hiding in a WAV.</p><p class="fix">Tags, cues and a quality audit for the whole library, written back to Rekordbox, on your machine.</p></div>
+<section class="vibe" aria-labelledby="vibe-h">
+  <div class="wrap">
+    <h2 id="vibe-h">Your time belongs to the music.</h2>
+    <p>DJOPS handles the library prep, the set planning, the video edits and the social media posts around every gig. You stay in the music: digging for tracks, building your DJ set and playing it for the room.</p>
   </div>
 </section>
 
-<section id="how" aria-labelledby="how-h">
-  <div class="sh"><h2 id="how-h">How it works</h2><span class="sub">the express path</span></div>
-  <div class="grid g3">
-    <div class="step"><div class="n">1</div><div><h3>Select the source</h3><p>The recordings, the audio if there is one, and which channel it's for. Five minutes, once.</p></div></div>
-    <div class="step"><div class="n">2</div><div><h3>Go to sleep</h3><p>Sync, analysis, the cut, the thumbnail, the listing, the clips and the schedule run on their own.</p></div></div>
-    <div class="step"><div class="n">3</div><div><h3>Answer, review, publish</h3><p>Come back to a short list of questions it couldn't decide. Review everything, then approve. Nothing goes out without you.</p></div></div>
+<section id="modules" aria-labelledby="mods-h">
+  <div class="wrap">
+    <p class="eyebrow">What's inside</p>
+    <h2 id="mods-h">Five tools, in the order of a DJ's week.</h2>
+    <p class="sub">Most DJ software stops at the booth. DJOPS covers the whole week around the gig, and each part feeds the next.</p>
+    <div class="loop" aria-hidden="true"><span>Library</span><i></i><span>Plan</span><i></i><span>Gig</span><i></i><span>Produce</span><i></i><span>Grow</span><i></i><span class="back">next gig</span></div>
+    <div class="mods">
+      <a class="mod" href="#library"><h3>Library</h3><span class="of">Your tracks</span><p class="what">Tags for genre, energy, vocals and instruments. Hot cues and loops on the moments you want, for every track, placed from its energy data.</p><span class="go">See Library</span></a>
+      <a class="mod" href="#plan"><h3>Plan</h3><span class="of">Your gig</span><p class="what">Your gigs schedule, with notes and set options for each night. Build playlists fast from your tracks' energy and styles.</p><span class="go">See Plan</span></a>
+      <a class="mod" href="#gig"><h3>Gig</h3><span class="of">Your night</span><p class="what">Your set's energy and mood read live from the music. Sent to lighting and visuals software as it happens.</p><span class="go">See Gig</span></a>
+      <a class="mod" href="#produce"><h3>Produce</h3><span class="of">Your set</span><p class="what">Multi-camera and 360 recordings cut to the music automatically, with your clean audio synced in. You just review, then publish to YouTube and SoundCloud.</p><span class="go">See Produce</span></a>
+      <a class="mod" href="#grow"><h3>Grow</h3><span class="of">Your channel</span><p class="what">Clips, hooks, captions and the posting schedule, all automatic. You just review and approve, for every account you run.</p><span class="go">See Grow</span></a>
+    </div>
   </div>
 </section>
 
-<section id="youtube" aria-labelledby="yt-h">
-  <div class="yt">
-    <div>
-      <div class="sh" style="margin-bottom:12px"><h2 id="yt-h">Publishing to YouTube</h2></div>
-      <p style="margin:0 0 14px;color:var(--muted)">Connect your own YouTube channel with Google sign-in. When you approve a set, DJOPS publishes it for you:</p>
-      <ul>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L19 7"/></svg><span>Uploads the full set and its short clips to the channel you pick</span></li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L19 7"/></svg><span>Writes the title and description, with the tracklist, artist credits and chapter timestamps</span></li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L19 7"/></svg><span>Sets the thumbnail it generated from your footage</span></li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L19 7"/></svg><span>Schedules the release and adds the set to a series playlist</span></li>
+<section id="library" class="feat" aria-labelledby="lib-h">
+  <div class="wrap feat-grid">
+    <div class="feat-copy">
+      <p class="eyebrow">Library</p>
+      <h2 id="lib-h">A Rekordbox library you can trust before every gig.</h2>
+      <p class="sub">Tagging, cues and file fixes are the hours nobody sees. DJOPS does them across your whole collection and writes everything back to Rekordbox.</p>
+      <ul class="ticks">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L19 7"/></svg><span><b>Tags that mean something to a DJ:</b> genre and sub-genre, energy, vocals, instruments and the moment of the night a track fits</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L19 7"/></svg><span><b>Hot cues and loops on the moments you want,</b> for every track, placed from its energy data</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L19 7"/></svg><span><b>Any file to what club players accept,</b> with cues and beatgrids kept. Free, always</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L19 7"/></svg><span><b>Playlists built from your tags,</b> plus Spotify sync and Beatport buy lists</span></li>
       </ul>
-      <p class="note">DJOPS only acts on channels you connect, only after you review and approve, and you can disconnect at any time. Your sign-in stays on your Mac. <a href="privacy.html">How we handle your data</a>.</p>
     </div>
-    <div class="flow" aria-label="Example of one set going out">
-      <div style="font-size:12px;letter-spacing:2px;color:var(--muted)">EXAMPLE: ONE SET GOING OUT</div>
-      <div class="row"><span class="dot" style="background:var(--blue)"></span>Full set, 2 h 14 min, 4K<span class="t">UPLOAD</span></div>
-      <div class="row"><span class="dot" style="background:var(--amber)"></span>Title, description, 31 tracks, chapters<span class="t">LISTING</span></div>
-      <div class="row"><span class="dot" style="background:var(--amber)"></span>Thumbnail from the peak moment<span class="t">THUMBNAIL</span></div>
-      <div class="row"><span class="dot" style="background:var(--green)"></span>6 clips, captioned, one per day<span class="t">SCHEDULE</span></div>
-      <div class="row"><span class="dot" style="background:#fff"></span>Added to the series playlist<span class="t">PLAYLIST</span></div>
+    <figure class="viz" aria-label="Illustration: tracks with tags and cue points">
+      <div class="viz-top"><b>Your collection</b><span class="mono">tagged · cued · checked</span></div>
+      <div class="trk"><span class="mono n">01</span><div class="tm"><div class="tags"><span>Afro house</span><span>Vocal</span><span>Warm-up</span></div><div class="cues"><i style="left:6%"></i><i style="left:31%"></i><i style="left:58%"></i><i style="left:84%"></i></div></div><span class="mono meta">122 · 8A</span></div>
+      <div class="trk"><span class="mono n">02</span><div class="tm"><div class="tags"><span>Melodic techno</span><span>Synth lead</span><span>Peak</span></div><div class="cues"><i style="left:9%"></i><i style="left:40%"></i><i style="left:71%"></i></div></div><span class="mono meta">124 · 5A</span></div>
+      <div class="trk"><span class="mono n">03</span><div class="tm"><div class="tags"><span>Baile funk</span><span>Percussion</span><span>Peak</span></div><div class="cues"><i style="left:4%"></i><i style="left:27%"></i><i style="left:52%"></i><i style="left:79%"></i></div></div><span class="mono meta">130 · 2A</span></div>
+      <div class="trk"><span class="mono n">04</span><div class="tm"><div class="tags"><span>Deep house</span><span>Instrumental</span><span>Closing</span></div><div class="cues"><i style="left:12%"></i><i style="left:47%"></i><i style="left:76%"></i></div></div><span class="mono meta">118 · 11A</span></div>
+      <figcaption>Illustration. Tags and cues are written back to Rekordbox.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section id="plan" class="feat" aria-labelledby="plan-h">
+  <div class="wrap feat-grid rev">
+    <div class="feat-copy">
+      <p class="eyebrow">Plan</p>
+      <h2 id="plan-h">Walk into every gig with a plan for that room.</h2>
+      <p class="sub">Every gig lives in your gigs schedule, with its notes and set options. DJOPS builds the sets from your tagged tracks, their energy and styles, and from what you've already played.</p>
+      <ul class="ticks">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L19 7"/></svg><span><b>A gigs schedule:</b> date, venue, slot and vibe for every booking</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L19 7"/></svg><span><b>Notes on every gig,</b> from the booking details to what to remember on the night</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L19 7"/></svg><span><b>Set options for each gig,</b> so you can pick the one that fits the room when you get there</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L19 7"/></svg><span><b>Build playlists fast</b> from your tagged tracks: energy, style and the moment of the night each one fits</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L19 7"/></svg><span><b>A read of your past sets:</b> energy, peaks, and the tracks that moved the room</span></li>
+      </ul>
+    </div>
+    <figure class="viz" aria-label="Illustration: a set plan split into moments of the night">
+      <div class="viz-top"><b>Friday · main room · 01:00 to 03:00</b><span class="mono">set option A</span></div>
+      <div class="arc" aria-hidden="true"><i style="--h:19"></i><i style="--h:16"></i><i style="--h:27"></i><i style="--h:18"></i><i style="--h:29"></i><i style="--h:28"></i><i style="--h:26"></i><i style="--h:37"></i><i style="--h:32"></i><i style="--h:42"></i><i style="--h:39"></i><i style="--h:43"></i><i style="--h:53"></i><i style="--h:63"></i><i style="--h:54"></i><i style="--h:59"></i><i style="--h:69"></i><i style="--h:78"></i><i style="--h:74"></i><i style="--h:73"></i><i style="--h:85"></i><i style="--h:70"></i><i style="--h:86"></i><i style="--h:91" class="hot"></i><i style="--h:89" class="hot"></i><i style="--h:89" class="hot"></i><i style="--h:79"></i><i style="--h:87"></i><i style="--h:75"></i><i style="--h:81"></i><i style="--h:81"></i><i style="--h:74"></i><i style="--h:75"></i><i style="--h:64"></i><i style="--h:62"></i><i style="--h:61"></i><i style="--h:67"></i><i style="--h:59"></i><i style="--h:54"></i><i style="--h:55"></i><i style="--h:49"></i><i style="--h:43"></i><i style="--h:49"></i><i style="--h:61" class="hot"></i><i style="--h:50" class="hot"></i><i style="--h:53" class="hot"></i><i style="--h:49" class="hot"></i><i style="--h:35"></i><i style="--h:30"></i><i style="--h:20"></i><i style="--h:31"></i><i style="--h:15"></i><i style="--h:21"></i><i style="--h:27"></i><i style="--h:16"></i><i style="--h:22"></i></div>
+      <div class="moments">
+        <div><b>Warm-up</b><span class="mono">14 tracks</span></div>
+        <div><b>Build</b><span class="mono">11 tracks</span></div>
+        <div><b>Peak</b><span class="mono">16 tracks</span></div>
+        <div><b>Closing</b><span class="mono">9 tracks</span></div>
+      </div>
+      <figcaption>Illustration of a plan for one slot.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section id="produce" class="feat" aria-labelledby="vid-h">
+  <div class="wrap feat-grid">
+    <div class="feat-copy">
+      <p class="eyebrow">Produce</p>
+      <h2 id="vid-h">Your set, filmed, cut and published.</h2>
+      <p class="sub">Drop in the recordings from the night. DJOPS syncs every camera to your clean audio and cuts the video to the music automatically. You just review it.</p>
+      <ul class="ticks">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L19 7"/></svg><span><b>Multi-camera and 360 footage</b> cut on the builds, drops and big moments</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L19 7"/></svg><span><b>360 reframed automatically</b> to follow you behind the decks</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L19 7"/></svg><span><b>Your board or mastered audio synced</b> over the footage, replacing the camera mic</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L19 7"/></svg><span><b>Thumbnail, title, tracklist and chapters</b> written for you</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L19 7"/></svg><span><b>Published to YouTube and SoundCloud,</b> private first if you want to check it</span></li>
+      </ul>
+    </div>
+    <figure class="viz" aria-label="Illustration: three camera angles cut to the music across a set">
+      <div class="viz-top"><b>The cut</b><span class="mono">2 cams + 360 · 2:14:08</span></div>
+      <div class="lanes" aria-hidden="true">
+        <div class="lane"><span class="mono">360</span><div class="lt"><i style="left:0;width:14%"></i><i style="left:41%;width:9%"></i><i style="left:78%;width:8%"></i></div></div>
+        <div class="lane"><span class="mono">CAM A</span><div class="lt"><i style="left:14%;width:12%"></i><i style="left:50%;width:14%"></i><i style="left:86%;width:14%"></i></div></div>
+        <div class="lane"><span class="mono">CAM B</span><div class="lt"><i style="left:26%;width:15%"></i><i style="left:64%;width:14%"></i></div></div>
+        <div class="lane"><span class="mono">AUDIO</span><div class="lt audio"></div></div>
+        <div class="drops"><span style="left:24%"></span><span style="left:43.5%"></span><span style="left:81%"></span></div>
+      </div>
+      <div class="viz-legend"><span><i class="k-cam"></i>camera on</span><span><i class="k-drop"></i>detected drop</span></div>
+      <figcaption>Illustration of a multi-camera cut. The switch points follow the music.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section id="grow" class="feat" aria-labelledby="con-h">
+  <div class="wrap feat-grid rev">
+    <div class="feat-copy">
+      <p class="eyebrow">Grow</p>
+      <h2 id="con-h">Every gig becomes a week of posts.</h2>
+      <p class="sub">It's all automatic: the moments that carried the room are cut, captioned and scheduled across your accounts. You just review and approve.</p>
+      <ul class="ticks">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L19 7"/></svg><span><b>The best moments picked for you,</b> cut vertical for Reels, TikTok and Shorts, and wide for YouTube</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L19 7"/></svg><span><b>Hooks, captions and a first comment</b> written in your voice, for each platform</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L19 7"/></svg><span><b>One calendar for every account</b> and every artist you manage</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L19 7"/></svg><span><b>The full set on YouTube and SoundCloud</b> with title, tracklist, chapters and thumbnail</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L19 7"/></svg><span><b>Channel insights:</b> what worked, what didn't, and what to post next</span></li>
+      </ul>
+    </div>
+    <figure class="viz clipviz" aria-label="Illustration: a vertical clip with its hook, caption and platforms">
+      <div class="phone"><div class="frame t c"><div class="crowd"></div></div><div class="hook">wait for the drop at 0:12</div></div>
+      <div class="clipmeta">
+        <div class="viz-top"><b>Clip 2 of 6</b><span class="mono">0:19 · 9:16</span></div>
+        <p class="cap-txt">Saturday got loud. Full set on YouTube, link in bio.</p>
+        <div class="plats"><span>Instagram Reels</span><span>TikTok</span><span>YouTube Shorts</span></div>
+        <div class="sched">
+          <div><span class="when mono">Sat 12:00</span><span class="what">Instagram</span><span class="ok">Scheduled</span></div>
+          <div><span class="when mono">Sat 19:00</span><span class="what">TikTok</span><span class="ok">Scheduled</span></div>
+          <div><span class="when mono">Sun 12:00</span><span class="what">YouTube Shorts</span><span class="ok">Scheduled</span></div>
+        </div>
+        <figcaption>Illustration of one clip, ready to go out.</figcaption>
+      </div>
+    </figure>
+  </div>
+</section>
+
+<section id="gig" aria-labelledby="also-h">
+  <div class="wrap">
+    <p class="eyebrow">Also inside</p>
+    <h2 id="also-h">Visuals, live and generated.</h2>
+    <div class="also">
+      <article class="mod"><h3>Gig</h3><p class="what">Energy and mood read live from your set, and sent to lighting and visuals software as it happens.</p></article>
+      <article class="mod"><h3>Generated visuals</h3><p class="what">Visuals generated from your set's own energy, to pair with any audio recording.</p></article>
     </div>
   </div>
 </section>
 
-<section aria-labelledby="week">
-  <div class="sh"><h2 id="week">And the rest of the week</h2><span class="sub">library · plan · gig · produce · grow</span></div>
-  <div class="grid g5">
-    <div class="card lane"><h3 style="color:var(--blue)">Library</h3><p>Tags, cues, quality audit, one clean root</p></div>
-    <div class="card lane"><h3 style="color:var(--amber)">Plan</h3><p>The gig as an object, playlists per situation, a brief from your past sets</p></div>
-    <div class="card lane"><h3>Gig</h3><p>A live read of the set, sent to lights and visuals</p></div>
-    <div class="card lane"><h3 style="color:var(--blue)">Produce</h3><p>Multi-cam, 360, the cut, the thumbnail, the listing</p></div>
-    <div class="card lane"><h3 style="color:var(--amber)">Grow</h3><p>Clips, schedule, insights, a channel doctor with buttons</p></div>
+<section id="works" aria-labelledby="works-h">
+  <div class="wrap">
+    <p class="eyebrow">Works with</p>
+    <h2 id="works-h">The gear and platforms you already use.</h2>
+    <div class="works">
+      <div class="wcol"><h3>Cameras</h3><ul><li>Phones, including iPhone HDR video</li><li>360 cameras like Insta360, exported from Insta360 Studio</li><li>Any camera that records a standard video file: action cams, DSLR and mirrorless</li><li>Several cameras on one set, synced automatically</li><li>Board or mic audio recorded separately, synced to the video</li></ul></div>
+      <div class="wcol"><h3>Where it posts</h3><ul><li>Instagram Reels</li><li>TikTok</li><li>YouTube and YouTube Shorts</li><li>SoundCloud</li></ul><p class="note">Instagram and TikTok posts go through Publer, a scheduler you connect once.</p></div>
+      <div class="wcol"><h3>DJ software and stores</h3><ul><li>Rekordbox: tags, cues, playlists and play history</li><li>Spotify: playlists both ways</li><li>Beatport: buy lists for missing tracks</li></ul><p class="note">Only the library and plan tools use Rekordbox. Clips and videos don't need it.</p></div>
+    </div>
   </div>
 </section>
 
-<section id="beta" aria-labelledby="beta-h">
-  <div class="beta">
-    <div>
-      <h2 id="beta-h">In private beta on macOS</h2>
-      <p>Free to use. Every result is on screen before you pay anything. We're onboarding a small group of DJs and VJs now. Want in? Tell us what you play and where; it takes a minute.</p>
+<section aria-labelledby="makers-h">
+  <div class="wrap">
+    <div class="makers">
+      <div>
+        <p class="eyebrow">Who's behind it</p>
+        <h2 id="makers-h">Built by DJs who use it every week.</h2>
+        <p>DJOPS started as the tool Thiago, who plays as TIGASYNC in Montréal, built to stop editing his own sets. Real sets go through it every week before any feature reaches you.</p>
+        <div class="links"><a href="https://www.youtube.com/@DJopsIO">Sets made with DJOPS on YouTube</a><a href="https://www.instagram.com/djops.io/">@djops.io on Instagram</a></div>
+      </div>
+      <div class="facts">
+        <div class="fact"><b>~8</b><span>sets a month through the app</span></div>
+        <div class="fact"><b>2</b><span>DJs building and testing it</span></div>
+        <div class="fact"><b>MTL</b><span>where it is built</span></div>
+        <div class="fact"><b>0</b><span>tracks uploaded to our servers</span></div>
+      </div>
     </div>
-    <a class="btn btn-primary" href="https://tally.so/r/rj7RAX">Request beta access</a>
   </div>
 </section>
+
+<section id="faq" aria-labelledby="faq-h">
+  <div class="wrap">
+    <p class="eyebrow">FAQ</p>
+    <h2 id="faq-h">Questions DJs ask first</h2>
+    <div class="faq">
+      <details><summary>Is my music uploaded anywhere?</summary><p>No. Your library and recordings stay on your Mac, and the analysis runs there. Only the videos and posts you approve go out, and only to the platforms you choose.</p></details>
+      <details><summary>What do I need?</summary><p>A Mac (Apple Silicon recommended). The video and clips don't need Rekordbox: they work from your camera and audio recordings. Only the library and plan tools connect to Rekordbox.</p></details>
+      <details><summary>Where can it publish?</summary><p>YouTube and SoundCloud directly. Instagram and TikTok through Publer, a scheduling service you connect to DJOPS.</p></details>
+      <details><summary>Will it post anything I haven't seen?</summary><p>No. You review every video, title, thumbnail and clip, and nothing is published until you approve it.</p></details>
+      <details><summary>What does it cost?</summary><p>It's free during the beta. After launch it stays free to use: you'll see every result before paying anything, and you only pay when you export or publish.</p></details>
+      <details><summary>Is there a Windows version?</summary><p>Not yet. DJOPS is Mac only for its first year.</p></details>
+    </div>
+  </div>
+</section>
+
+<div class="wrap final">
+  <h2>Your next set is the demo.</h2>
+  <p>We're onboarding DJs in small groups. Tell us what you play and we'll get you in.</p>
+  <a class="btn btn-primary" href="https://tally.so/r/rj7RAX">Join the beta</a>
+</div>
 </main>
 
 <footer>
-  <div class="row">
-    <div class="tag">Your next set is the demo.</div>
-    <div class="links">
-      <a href="https://www.instagram.com/djops.io/">Instagram</a>
-      <a href="https://www.youtube.com/@DJopsIO">YouTube</a>
-      <a href="privacy.html">Privacy Policy</a>
-      <a href="terms.html">Terms of Service</a>
-      <a href="mailto:hello@djopsio.com">hello@djopsio.com</a>
+  <div class="wrap">
+    <div class="row">
+      <a class="brand" href="./" aria-label="DJOPS home"><svg viewBox="0 0 1024 1024" aria-hidden="true"><rect width="1024" height="1024" rx="229.9" fill="#1C1C1C"/><rect x="89.5" y="252.3" width="131.7" height="519.4" rx="65.9" fill="#A6A6A6"/><rect x="292" y="89.5" width="131.7" height="845.1" rx="65.9" fill="#A6A6A6"/><rect x="494.6" y="187" width="131.7" height="650" rx="65.9" fill="#9EFF00"/><path d="M697.1 314.3 L934.4 512 L697.1 709.7 Z" fill="#9EFF00"/></svg>DJOPS</a>
+      <div class="links">
+        <a href="https://www.instagram.com/djops.io/">Instagram</a>
+        <a href="https://www.youtube.com/@DJopsIO">YouTube</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+        <a href="mailto:hello@djopsio.com">hello@djopsio.com</a>
+      </div>
     </div>
+    <p class="fine">DJOPS · Made in Montréal. Rekordbox is a trademark of AlphaTheta Corporation. YouTube is a trademark of Google LLC. DJOPS is not affiliated with or endorsed by either.</p>
   </div>
-  <p class="fine">DJOPS · macOS · Made in Montréal. YouTube is a trademark of Google LLC. DJOPS is not affiliated with or endorsed by YouTube or Google.</p>
 </footer>
-
-</div>
 </body>
 </html>
