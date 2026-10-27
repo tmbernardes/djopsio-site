@@ -235,9 +235,11 @@ footer .fine{font-size:12px;color:var(--text-muted);margin:18px 0 0}
 .moments span{font-size:12px;color:var(--text-muted)}
 .also{display:grid;gap:14px;margin-top:24px}
 @media (min-width:760px){.also{grid-template-columns:1fr 1fr}}
+@media (min-width:1000px){.also{grid-template-columns:repeat(4,1fr)}}
 .also .mod h3{font-size:18px}
 .works{display:grid;gap:14px;margin-top:28px}
-@media (min-width:900px){.works{grid-template-columns:repeat(3,1fr)}}
+@media (min-width:760px){.works{grid-template-columns:1fr 1fr}}
+@media (min-width:1100px){.works{grid-template-columns:repeat(4,1fr)}}
 .wcol{background:var(--card);border:1px solid var(--hairline);border-radius:var(--radius-card);padding:22px}
 .wcol h3{margin:0 0 12px;font-size:18px;color:var(--text-strong)}
 .wcol ul{margin:0;padding:0 0 0 18px;display:flex;flex-direction:column;gap:8px;font-size:15px}
